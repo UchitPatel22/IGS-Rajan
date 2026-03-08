@@ -1,0 +1,127 @@
+/* ================================
+   Global Window
+================================ */
+QWidget {
+    background-color: #1E1E2F;
+    color: #F5F5F5;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+/* ================================
+   Labels
+================================ */
+QLabel {
+    font-weight: 500;
+    color: #E0E0E0;
+}
+
+/* ================================
+   Line Edits (Inputs)
+================================ */
+QLineEdit {
+    background-color: #2A2A3D;
+    border: 1px solid #3C3C55;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #FFFFFF;
+    selection-background-color: #6A5ACD;
+}
+
+QLineEdit:focus {
+    border: 1px solid #6A5ACD;
+    background-color: #33334D;
+}
+
+/* ================================
+   Table Style
+================================ */
+QTableWidget {
+    background-color: #24243A;
+    alternate-background-color: #2C2C48;
+    border: 1px solid #3A3A56;
+    gridline-color: #444466;
+    selection-background-color: #6A5ACD;
+    selection-color: white;
+}
+
+QHeaderView::section {
+    background-color: #3A3A5E;
+    color: #E0E0E0;
+    font-weight: bold;
+    border: 1px solid #4B4B70;
+    padding: 6px;
+}
+
+QTableCornerButton::section {
+    background-color: #3A3A5E;
+}
+
+/* ================================
+   Buttons
+================================ */
+QPushButton {
+    background-color: #3A3A5E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+/* Add Button – green accent */
+QPushButton[text="Add"] {
+    background-color: #28A745;
+}
+QPushButton[text="Add"]:hover {
+    background-color: #32C957;
+}
+
+/* Save Button – blue accent */
+QPushButton[text="Save"] {
+    background-color: #007BFF;
+}
+QPushButton[text="Save"]:hover {
+    background-color: #2196F3;
+}
+
+/* Delete Button (future use) – red accent */
+QPushButton[text="Delete"] {
+    background-color: #DC3545;
+}
+QPushButton[text="Delete"]:hover {
+    background-color: #E74C3C;
+}
+
+/* Edit Button (future use) – orange accent */
+QPushButton[text="Edit"] {
+    background-color: #FD7E14;
+}
+QPushButton[text="Edit"]:hover {
+    background-color: #FF922B;
+}
+
+/* ================================
+   Scrollbars
+================================ */
+QScrollBar:vertical {
+    background-color: #2E2E48;
+    width: 10px;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical {
+    background-color: #5A5AA3;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #7B7BFF;
+}
+
+/* ================================
+   Message Boxes
+================================ */
+QMessageBox {
+    background-color: #292945;
+    color: #FFFFFF;
+}

@@ -1,0 +1,151 @@
+/* ============================= GLOBAL BACKGROUND ============================= */
+QWidget {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #E8F1FB, stop:1 #DDEBFF
+    );
+    font-family: "Segoe UI", "Arial";
+}
+
+/* ============================= HEADER ============================= */
+QLabel#headerLabel {
+    font-size: 38px;
+    font-weight: 800;
+    color: #0D47A1; /* Deep royal blue */
+    padding: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+/* ============================= FOOTER ============================= */
+QFrame#footerLine {
+    background-color: #B0BEC5;
+    max-height: 2px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+QLabel#footerLabel {
+    font-size: 12px;
+    font-weight: 500;
+    color: #424242;
+    padding: 5px;
+    background: transparent;
+    qproperty-alignment: AlignCenter;
+}
+
+/* ============================= BUTTONS ============================= */
+QPushButton {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    min-width: 180px;
+    padding: 15px;
+    border: none;
+}
+
+QPushButton#newBtn {
+    background-color: #2E7D32;
+}
+QPushButton#newBtn:hover {
+    background-color: #388E3C;
+}
+
+QPushButton#editBtn {
+    background-color: #EF6C00;
+}
+QPushButton#editBtn:hover {
+    background-color: #FB8C00;
+}
+
+QPushButton#viewBtn {
+    background-color: #1565C0;
+}
+QPushButton#viewBtn:hover {
+    background-color: #1E88E5;
+}
+
+QPushButton#deletedBtn {
+    background-color: #C62828;
+}
+QPushButton#deletedBtn:hover {
+    background-color: #E53935;
+}
+
+QPushButton:pressed {
+    
+}
+
+/* ============================= INPUT FIELDS ============================= */
+QLineEdit#invoiceInput {
+    font-size: 16px;
+    padding: 8px 10px;
+    min-width: 320px;
+    max-width: 420px;
+    border: 1.5px solid #B0BEC5;
+    border-radius: 6px;
+    background: #FAFAFA;
+    color: #212121;
+}
+
+QLineEdit#invoiceInput:focus {
+    border: 1.5px solid #4A90E2;
+    background: #FFFFFF;
+}
+
+/* ============================= LABELS ============================= */
+QLabel {
+    background: transparent;
+    color: #1A237E;
+}
+
+QLabel#invoiceLabel {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0D47A1;
+}
+
+/* ============================= CALENDAR ============================= */
+QCalendarWidget {
+    border: 1px solid #B0BEC5;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+QCalendarWidget QAbstractItemView::item {
+    background: #E3F2FD;
+    color: #212121;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+QCalendarWidget QAbstractItemView::item:selected {
+    background: #1E88E5;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+QCalendarWidget QAbstractItemView::item:hover {
+    background: #90CAF9;
+}
+
+QCalendarWidget QToolButton {
+    color: #0D47A1;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 5px;
+}

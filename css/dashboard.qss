@@ -1,0 +1,129 @@
+/* --------------------------------- APPLICATION BACKGROUND --------------------------------- */
+
+
+QWidget {
+    background: #b0daf4ff;
+}
+
+/* --------------------------------- MAKE ALL LABELS TRANSPARENT --------------------------------- */
+QLabel {
+    background: transparent; /* removes any blocky appearance */
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+QLabel#headerLabel {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a237e; /* Dark Blue */
+    padding: 20px;
+    border-radius: 0;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+QLabel#footerLabel {
+    font-size: 12px;
+    font-weight: 500; /* Light bold */
+    color: #424242; /* Dark Gray */
+    padding: 5px;
+    border-radius: 0;
+}
+
+/* Footer line */
+QFrame#footerLine {
+    background-color: #bdbdbd; /* Light gray line */
+    max-height: 2px;
+    margin-bottom: 2px;
+}
+
+/* --------------------------------- BUTTONS --------------------------------- */
+QPushButton#newBtn {
+    font-size: 18px;
+    padding: 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 10px;
+    min-width: 180px;
+}
+QPushButton#newBtn:hover { background-color: #218838; }
+
+QPushButton#editBtn {
+    font-size: 18px;
+    padding: 20px;
+    background-color: #fd7e14;
+    color: white;
+    border-radius: 10px;
+    min-width: 180px;
+}
+QPushButton#editBtn:hover { background-color: #e8590c; }
+
+QPushButton#viewBtn {
+    font-size: 18px;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    min-width: 180px;
+}
+QPushButton#viewBtn:hover { background-color: #0069d9; }
+
+QPushButton#deletedBtn {
+    font-size: 18px;
+    padding: 20px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 10px;
+    min-width: 180px;
+}
+QPushButton#deletedBtn:hover { background-color: #c82333; }
+
+/* --------------------------------- INVOICE INPUT --------------------------------- */
+QLineEdit#invoiceInput {
+    font-size: 16px;
+    padding: 5px;
+    min-width: 300px;
+    max-width: 400px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    background: transparent; /* fully blend with gradient */
+    color: #000; /* keep text readable */
+}
+
+/* Invoice display in NewInvoiceWindow */
+QLabel#invoiceLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a237e; /* Dark blue */
+}
+
+
+ QCalendarWidget QAbstractItemView::item {
+        background: #d0e1ff;
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 14px;
+    }
+    QCalendarWidget QAbstractItemView::item:selected {
+        background: #4a90e2;
+        color: white;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    QCalendarWidget QAbstractItemView::item:hover {
+        background: #4a90e2;
+    }
+    /* --------------------------------- CALENDAR HEADER (Month & Year) --------------------------------- */
+QCalendarWidget QToolButton {
+    color: #1a237e;              /* Dark blue text */
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent; /* Keep it clean */
+    border: none;
+    padding: 5px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #4a90e2;  /* Same blue as selected day */
+    color: white;
+    border-radius: 5px;
+}
+

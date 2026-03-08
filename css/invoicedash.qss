@@ -1,0 +1,207 @@
+/* --------------------------------- APP BACKGROUND --------------------------------- */
+QWidget {
+    background-color: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 1,
+        stop: 0 #E8F1FA,
+        stop: 1 #C5E1F7
+    );
+    font-family: "Segoe UI", sans-serif;
+    color: #1E1E1E;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+QLabel#headerLabel {
+    font-size: 34px;
+    font-weight: 700;
+    color: #0D47A1;
+    letter-spacing: 1px;
+    background: transparent;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #90CAF9;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+QFrame#footerLine {
+    background-color: #B0BEC5;
+    max-height: 2px;
+    margin-bottom: 5px;
+}
+
+QLabel#footerLabel {
+    font-size: 12px;
+    color: #37474F;
+}
+
+/* --------------------------------- GROUPBOX --------------------------------- */
+QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0D47A1;
+    border: 2px solid #90CAF9;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    background-color: #0D47A1;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px 15px;
+}
+
+/* --------------------------------- TABLES --------------------------------- */
+QTableWidget {
+    background: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    border-radius: 8px;
+    gridline-color: #CFD8DC;
+    font-size: 14px;
+    selection-background-color: #64B5F6;
+    selection-color: white;
+}
+
+QHeaderView::section {
+    background-color: #1565C0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+}
+
+QTableCornerButton::section {
+    background-color: #1565C0;
+}
+
+/* --------------------------------- INPUT FIELDS --------------------------------- */
+QLineEdit, QComboBox, QDateEdit {
+    background: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus {
+    border: 1px solid #42A5F5;
+}
+
+/* --------------------------------- BUTTONS --------------------------------- */
+QPushButton {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    min-width: 160px;
+}
+
+/* --------------------------------- ACTION BUTTONS: FLIGHT / PASSENGER / TICKET --------------------------------- */
+QPushButton#addFlightBtn,
+QPushButton#addPassengerBtn,
+QPushButton#addTicketBtn {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 20px;
+    border: none;
+    min-width: 160px;
+}
+
+/* --- Add Flight Button --- */
+QPushButton#addFlightBtn {
+    background-color: #1565C0;
+}
+QPushButton#addFlightBtn:hover {
+    background-color: #1E88E5;  
+}
+
+/* --- Add Passenger Button --- */
+QPushButton#addPassengerBtn {
+    background-color: #2E7D32;
+}
+QPushButton#addPassengerBtn:hover {
+    background-color: #43A047;
+}
+
+/* --- Add Ticket Button --- */
+QPushButton#addTicketBtn {
+    background-color: #FB8C00;
+}
+QPushButton#addTicketBtn:hover {
+    background-color: #FFA726;
+}
+
+
+/* --- Main Buttons --- */
+QPushButton#newBtn      { background-color: #2E7D32; }
+QPushButton#editBtn     { background-color: #FB8C00; }
+QPushButton#viewBtn     { background-color: #1565C0; }
+QPushButton#deletedBtn  { background-color: #C62828; }
+
+/* --- Action Buttons --- */
+QPushButton#newBtn:hover      { background-color: #43A047; }
+QPushButton#editBtn:hover     { background-color: #FFA726; }
+QPushButton#viewBtn:hover     { background-color: #1E88E5; }
+QPushButton#deletedBtn:hover  { background-color: #E53935; }
+
+/* --- Save / Cancel Buttons --- */
+QPushButton[text*="Save"] {
+    background-color: #1976D2;
+}
+QPushButton[text*="Save"]:hover {
+    background-color: #1E88E5;
+}
+QPushButton[text*="Cancel"] {
+    background-color: #9E9E9E;
+}
+QPushButton[text*="Cancel"]:hover {
+    background-color: #757575;
+}
+
+/* --------------------------------- CALENDAR --------------------------------- */
+QCalendarWidget QAbstractItemView::item {
+    background: #E3F2FD;
+    font-size: 14px;
+    min-width: 40px;
+    min-height: 40px;
+    color: #212121;
+}
+QCalendarWidget QAbstractItemView::item:selected {
+    background: #1565C0;
+    color: white;
+    border-radius: 6px;
+}
+QCalendarWidget QAbstractItemView::item:hover {
+    background: #90CAF9;
+}
+
+/* Calendar header buttons */
+QCalendarWidget QToolButton {
+    color: #0D47A1;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    padding: 6px;
+}
+QCalendarWidget QToolButton:hover {
+    background-color: #42A5F5;
+    color: white;
+    border-radius: 5px;
+}
+
+/* --------------------------------- SCROLL AREA --------------------------------- */
+QScrollArea {
+    border: none;
+    background: transparent;
+}
